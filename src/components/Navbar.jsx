@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
+import { CiMenuFries } from "react-icons/ci";
+import { RiCloseLargeLine } from "react-icons/ri";
 
 const Navbar = () => {
 const [showMenu, setShowMenu] = useState(false)
@@ -50,7 +52,11 @@ const [showMenu, setShowMenu] = useState(false)
           className="absolute right-4 top-4 text-black"
           onClick={toggleMobileMenu}
         >
-          {!showMenu ? "Menu" : "Close"}
+          {showMenu ? (
+            <RiCloseLargeLine size={25} />
+          ) : (
+            <CiMenuFries size={30} />
+          )}
         </div>
 
         {/* Mobile Menu */}
