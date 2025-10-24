@@ -20,7 +20,7 @@ const [showMenu, setShowMenu] = useState(false)
     setShowMenu(prev => !prev)
   }
   return (
-    <div className="w-full h-16 md:h-22 bg-(--secondary) fixed top-0">
+    <div className="w-full h-16 md:h-22 Z-60 bg-(--secondary) fixed top-0">
       {/* desktop */}
       <div className="w-full h-full items-center max-w-[1200px] mx-auto hidden md:flex justify-between px-2 md:px-0">
         {/* logo */}
@@ -83,7 +83,7 @@ const [showMenu, setShowMenu] = useState(false)
 
         {/* Mobile Menu */}
         <div
-          className={`fixed top-0 w-[50%] left-0 bg-(--secondary) h-screen md:hidden transition-transform duration-700 ${
+          className={`fixed Z-50 top-0 w-[50%] left-0 bg-(--secondary) h-screen md:hidden transition-transform duration-700 ${
             showMenu ? "translate-x-0" : "-translate-x-full"
           }`}
         >
