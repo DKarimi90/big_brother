@@ -87,7 +87,7 @@ useEffect(() => {
 
   return (
     <div
-      className={`w-full h-16 md:h-42 Z-60 ${
+      className={`w-full fixed h-16 md:h-42 Z-50 ${
         !scroll ? "bg-(--secondary)" : "bg-white"
       } fixed top-0`}
     >
