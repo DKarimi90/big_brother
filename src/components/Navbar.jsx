@@ -1,10 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import { CiMenuFries } from "react-icons/ci";
 import { RiCloseLargeLine } from "react-icons/ri";
+import {IoMdCall} from "react-icons/io"
+import { MdEmail } from "react-icons/md";
+
+
 
 const Navbar = () => {
 const [showMenu, setShowMenu] = useState(false)
+const [scroll, setScroll] = useState(false);
 
   const links = [
     { title: "Home", url: "banner" },
@@ -19,30 +24,70 @@ const [showMenu, setShowMenu] = useState(false)
   const toggleMobileMenu = () => {
     setShowMenu(prev => !prev)
   }
+
+useEffect(() => {
+  // Scroll handler
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setScroll(true);
+    } else {
+      setScroll(false);
+    }
+  };
+
+  // Attach scroll listener
+  window.addEventListener("scroll", handleScroll);
+
+  // Cleanup when component unmounts
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
+}, []);
+
   return (
-    <div className="w-full h-16 md:h-22 Z-60 bg-(--secondary) fixed top-0">
+    <div
+      className={`w-full h-16 md:h-42 Z-60 ${
+        !scroll ? "bg-(--secondary)" : "bg-white"
+      } fixed top-0`}
+    >
       {/* desktop */}
       <div className="w-full h-full items-center max-w-[1200px] mx-auto hidden md:flex justify-between px-2 md:px-0">
         {/* logo */}
-        <div className="w-[120px] cursor-pointer">
+        <div className="w-[250px] cursor-pointer">
           <Link to="banner">
             <img src="./images/big_brother.png" />
           </Link>
         </div>
-        <div className=" flex gap-2">
-          {links.map((link, index) => (
-            <div key={index}>
-              <Link
-                to={link.url}
-                className="cursor-pointer"
-                smooth={true}
-                spy={true}
-                activeClass="text-(--primaryOne)"
-              >
-                {link.title}
-              </Link>
+        <div className="flex flex-col">
+          <div className="flex gap-2 justify-end">
+            <div className="flex items-center">
+              <span>
+                <IoMdCall />
+              </span>
+              : +254 - 903 - 314
             </div>
-          ))}
+            <div className="flex items-center">
+              <span>
+                <MdEmail />
+              </span>
+              : ruthmwathi9@gmail.com
+            </div>
+          </div>
+          <div className="h-0.5 w-full bg-(--primaryOne) my-2"></div>
+          <div className=" flex gap-2">
+            {links.map((link, index) => (
+              <div className="cursor-pointer" key={index}>
+                <Link
+                  to={link.url}
+                  smooth={true}
+                  spy={true}
+                  activeClass="text-(--primaryOne) border-b"
+                >
+                  {link.title}
+                </Link>
+              </div>
+            ))}
+          </div>
         </div>
         <div>
           <a
@@ -58,7 +103,7 @@ const [showMenu, setShowMenu] = useState(false)
       {/* mobile */}
       <div className="fixed md:hidden z-60 top-0 left-0 w-full">
         {/* Toggle Button */}
-        <div>
+        <div className="flex">
           <div className="px-2">
             <Link onClick={toggleMobileMenu} to={"banner"}>
               <img
@@ -67,6 +112,21 @@ const [showMenu, setShowMenu] = useState(false)
                 className="w-[100px]"
               />
             </Link>
+          </div>
+
+          <div className="flex text-(--primaryOne) text-xs pl-4 flex-col items-center  justify-center">
+            <div className="flex items-center">
+              <span>
+                <IoMdCall />
+              </span>
+              : +254 - 903 - 314
+            </div>
+            <div className="flex items-center">
+              <span>
+                <MdEmail />
+              </span>
+              : ruthmwathi9@gmail.com
+            </div>
           </div>
 
           <div

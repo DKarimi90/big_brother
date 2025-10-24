@@ -6,7 +6,7 @@ const Banner = () => {
       <div className='page_top_space'>
         {/* video */}
         <div>
-          <video src='./videos/bannervid.mp4' className='w-full h-screen md:h-full object-cover' autoPlay muted loop/>
+          <video src='./videos/bannervid.mp4' className='w-full h-screen md:h-[70vh] object-cover' autoPlay muted loop/>
         </div>
       </div>
     </div>
