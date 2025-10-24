@@ -53,7 +53,7 @@ const [showMenu, setShowMenu] = useState(false)
           onClick={toggleMobileMenu}
         >
           {showMenu ? (
-            <RiCloseLargeLine size={25} />
+            <RiCloseLargeLine size={20} />
           ) : (
             <CiMenuFries size={30} />
           )}
@@ -69,7 +69,7 @@ const [showMenu, setShowMenu] = useState(false)
           <div className="flex flex-col">
             {/* Logo */}
             <div className="p-4 flex justify-start">
-              <Link>
+              <Link onClick={toggleMobileMenu} to={"banner"}>
                 <img
                   src="./images/big_brother.png"
                   alt="Big Brother Logo"
@@ -81,7 +81,7 @@ const [showMenu, setShowMenu] = useState(false)
             {/* Links */}
             <div className="flex flex-col gap-2 p-4">
               {links.map((mobile_link, index) => (
-                <Link key={index} to={mobile_link.url}>
+                <Link onClick={toggleMobileMenu} key={index} to={mobile_link.url}>
                   {mobile_link.title}
                 </Link>
               ))}
