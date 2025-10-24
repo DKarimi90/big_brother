@@ -3,9 +3,9 @@ import React from 'react'
 const Services = () => {
   return (
     <div name="services">
-      Services
+      <div className="page_top_space">Services</div>
     </div>
-  )
+  );
 }
 
 export default Services

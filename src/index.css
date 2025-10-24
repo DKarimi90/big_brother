@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
 @layer base {
-  .base {@apply w-full max-w-[1200px] mx-auto}
+  .pages {@apply w-full max-w-[1200px] mx-auto px-2 md:px-0}
+  .page_top_space {
+    @apply md:pt-24
+  }
 }

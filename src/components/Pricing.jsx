@@ -3,9 +3,9 @@ import React from 'react'
 const Pricing = () => {
   return (
     <div name="pricing">
-      Pricing
+      <div className="page_top_space">Pricing</div>
     </div>
-  )
+  );
 }
 
 export default Pricing
