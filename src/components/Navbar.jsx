@@ -55,7 +55,7 @@ const [showMenu, setShowMenu] = useState(false)
 
         {/* Mobile Menu */}
         <div
-          className={`fixed top-0 w-[50%] left-0 bg-white h-screen md:hidden transition-transform duration-700 ${
+          className={`fixed top-0 w-[50%] left-0 bg-gray-200 h-screen md:hidden transition-transform duration-700 ${
             showMenu ? "translate-x-0" : "-translate-x-full"
           }`}
         >
