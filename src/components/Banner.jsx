@@ -2,10 +2,12 @@ import React from 'react'
 
 const Banner = () => {
   return (
-    <div name="about" className='h-screen'>
+    <div name="banner" className=''>
       <div className='page_top_space'>
-
-      Banner
+        {/* video */}
+        <div>
+          <video src='./videos/bannervid.mp4' className='w-full h-screen md:h-full object-cover' autoPlay muted loop/>
+        </div>
       </div>
     </div>
   )

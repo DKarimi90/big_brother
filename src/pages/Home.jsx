@@ -1,18 +1,28 @@
-import React from 'react'
-import { About, Banner, Contact, FAQ, Pricing, Services, Testimonials } from '../components'
+import React from "react";
+import {
+  About,
+  Banner,
+  Contact,
+  FAQ,
+  Pricing,
+  Services,
+  Testimonials,
+} from "../components";
 
 const Home = () => {
   return (
-    <div className='pages'>
-    <Banner />
-    <About />
-    <Services />
-    <Pricing />
-    <Testimonials />
-    <FAQ />
-    <Contact />
+    <div>
+      <Banner />
+      <div className="pages">
+        <About />
+        <Services />
+        <Pricing />
+        <Testimonials />
+        <FAQ />
+        <Contact />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
