@@ -46,7 +46,7 @@ const [showMenu, setShowMenu] = useState(false)
       </div>
 
       {/* mobile */}
-      <div className="fixed z-60 top-0 left-0 w-full">
+      <div className="fixed md:hidden z-60 top-0 left-0 w-full">
         {/* Toggle Button */}
         <div
           className="absolute right-4 top-4 text-black"
