@@ -51,7 +51,7 @@ const servicesData = [
 
 const Services = () => {
   return (
-    <div name="services" className="w-full pt-10">
+    <div name="services" className="w-full pt-10 bg-(--secondary) mt-2 pb-3">
       <div className="">
         <div className="w-full flex flex-col items-center">
           <h1 className="font-bold text-2xl text-(--primaryOne) md:text-4xl lg:text-6xl border-b mb-2">
@@ -65,7 +65,7 @@ const Services = () => {
         <section className="w-full grid md:grid-cols-2 lg:grid-cols-3 gap-4 px-2 mt-6">
           {servicesData.map((service, index) => (
             <div key={index} className="group">
-              <div className=" h-full bg-(--secondary) p-2 rounded-md">
+              <div className=" h-full bg-white p-2 rounded-md">
                 <div className="text-5xl">{service.icon}</div>
                 <div className="col-span-2 p-3 flex flex-col items-center">
                   <h1 className="text-2xl text-(--primary)">
