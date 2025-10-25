@@ -22,5 +22,11 @@
   .btnOne {
     @apply bg-(--secondaryOne) px-4 py-2 rounded-xl text-white cursor-pointer
   }
+    .btnTwo {
+    @apply bg-(--primaryOne) px-8 py-3 hover:bg-transparent hover:border hover:text-(--primaryOne) hover:border-(--primaryOne) rounded-xl text-white cursor-pointer
+  }
+      .btnThree {
+    @apply bg-transparent border border-(--primaryOne) px-8 py-3 hover:bg-(--primaryOne) rounded-xl text-white cursor-pointer
+  }
   
 }
