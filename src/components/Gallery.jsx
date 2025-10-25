@@ -31,7 +31,7 @@ const Gallery = () => {
   ];
 
   return (
-    <div name="gallery" className="w-full py-2 bg-white px-2">
+    <div name="gallery" className=" w-full py-2 bg-white px-2">
       <div className="max-w-[1200px] mx-auto">
         <Slider {...settings}>
           {galleryItems.map((item, index) => (
@@ -43,10 +43,15 @@ const Gallery = () => {
                   className="w-full h-full  object-cover duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 duration-500 flex items-center justify-center">
-                  <p className="text-white text-sm sm:text-lg md:text-2xl font-semibold opacity-0 group-hover:opacity-100 duration-700 text-center px-2">
+                  <p className="text-white text-sm sm:text-lg md:text-2xl font-semibold opacity-0 group-hover:opacity-100 duration-700 text-center px-2 group-hover:z-50">
                     {item.title}
                   </p>
                 </div>
+                {/* <div className="absolute top-5 w-full h-full flex justify-end right-5 group-hover:opacity-0">
+                  <div className="bg-gray-900/60 w-[100px] rounded-full h-[100px] p-2 border-white border-2">
+                    <img src="./images/big_brother.png" className="object-cover" />
+                  </div>
+                </div> */}
               </div>
             </div>
           ))}

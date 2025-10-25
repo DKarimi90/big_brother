@@ -21,8 +21,8 @@ const Banner = () => {
                 Big Brothers Enterprise
               </h1>
               <p className="px-4 text-center text-xl md:text-2xl lg:text-4xl text-orange-400">
-                Dealers in construction of memorial tombstones,
-                headstones,(Terrazzo & Granite), plaques & Pulpits
+                Dealers in construction of Memorial Tombstones,
+                Headstones,(Terrazzo & Granite), Plaques & Pulpits
               </p>
             </div>
           </div>
