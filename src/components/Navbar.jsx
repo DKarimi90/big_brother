@@ -148,7 +148,7 @@ useEffect(() => {
           </div>
           <div className="mt-4 flex justify-center">
             <a
-              href="https://wa.me/254716903314?text=Thank%20you%20for%20contacting%20Big%20Brothers%20Enterprise"
+              href="https://wa.me/254716903314?text=Hello%20Big%20Brothers%20Enterprise!%20I%27m%20interested%20in%20your%20services.%20Could%20you%20please%20share%20more%20details?"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -163,11 +163,12 @@ useEffect(() => {
         {/* Toggle Button */}
         <div className="flex">
           <div className="px-2">
-            <Link onClick={toggleMobileMenu} to={"banner"}>
+            <Link to={"banner"}>
               <img
                 src="./images/big_brother.png"
                 alt="Big Brother Logo"
                 className="w-[100px]"
+                smooth={true}
               />
             </Link>
           </div>
@@ -252,7 +253,7 @@ useEffect(() => {
               </div>
               <div className="mt-4 flex justify-center">
                 <a
-                  href="https://wa.me/254716903314?text=Thank%20you%20for%20contacting%20Big%20Brothers%20Enterprise"
+                  href="https://wa.me/254716903314?text=Hello%20Big%20Brothers%20Enterprise!%20I%27m%20interested%20in%20your%20services.%20Could%20you%20please%20share%20more%20details?"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
