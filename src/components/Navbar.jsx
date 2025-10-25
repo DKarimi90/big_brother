@@ -228,6 +228,7 @@ useEffect(() => {
                   smooth={true}
                   spy={true}
                   activeClass="text-(--primaryOne)"
+                  className="border-b py-2"
                 >
                   {mobile_link.title}
                 </Link>
