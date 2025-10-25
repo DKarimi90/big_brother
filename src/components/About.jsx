@@ -4,7 +4,10 @@ import { Link } from "react-scroll";
 
 const About = () => {
   return (
-    <div className="w-full grid lg:grid-cols-2 bg-gray-100 mt-10 px-1">
+    <div
+      name="about"
+      className="w-full page_top_space pages grid lg:grid-cols-2 bg-gray-100 mt-10 px-1"
+    >
       {/* image */}
       <div className="">
         <img src="/images/henry.jpeg" className=" object-cover -rotate" />
