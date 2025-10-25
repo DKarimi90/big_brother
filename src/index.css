@@ -30,3 +30,18 @@
   }
   
 }
+
+/* Fix react-slick overflow bug */
+.slick-list {
+  overflow: hidden !important;
+}
+
+.slick-track {
+  display: flex !important;
+  overflow: hidden !important;
+}
+
+html, body {
+  overflow-x: hidden !important;
+}
+

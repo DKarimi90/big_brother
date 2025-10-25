@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+import Gallery from "./Gallery";
 
 const Banner = () => {
   return (
@@ -30,6 +31,10 @@ const Banner = () => {
           <div className="w-full flex justify-center gap-4 mt-6">
             <Link to={"services"} smooth="true" duration={700} className="btnTwo">Learn More</Link>
             <Link to={"contact"} smooth="true" duration={700} className="btnThree">Get Quote</Link>
+          </div>
+
+          <div className="bottom-0 absolute">
+            <Gallery />
           </div>
         </div>
       </div>
