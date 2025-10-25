@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div
       name="about"
-      className="w-full  grid lg:grid-cols-2 bg-gray-100 mt-4 md:mt-10 px-1"
+      className="w-full  grid lg:grid-cols-2 bg-gray-100 mt-4 px-1"
     >
       {/* image */}
       <div className="">
