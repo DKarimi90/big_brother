@@ -75,6 +75,7 @@ const Contact = () => {
           <button
             type="submit"
             className="uppercase tracking-wide btnTwo transition-all"
+            onClick={() => alert('working on that feature')}
           >
             Send Message
           </button>
