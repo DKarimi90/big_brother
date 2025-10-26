@@ -51,8 +51,8 @@ const servicesData = [
 
 const Services = () => {
   return (
-    <div name="services" className="w-full pages pt-10 bg-(--secondary) mt-2 pb-3">
-      <div className="">
+    <div name="services" className="w-full pt-10 bg-(--secondary) mt-2 pb-3">
+      <div className="pages-2">
         <div className="w-full flex flex-col items-center">
           <h1 className="font-bold text-2xl text-(--primaryTwo) md:text-4xl lg:text-6xl border-b mb-2">
             Our <span className="text-(--primary)">Services</span>
