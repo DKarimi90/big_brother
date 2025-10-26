@@ -22,7 +22,7 @@ const [scroll, setScroll] = useState(false);
     { title: "Home", url: "banner" },
     { title: "About Us", url: "about" },
     { title: "Services", url: "services" },
-    { title: "Pricing", url: "pricing" },
+    // { title: "Pricing", url: "pricing" },
     { title: "Testimonials", url: "testimonials" },
     { title: "FAQs", url: "faq" },
     { title: "Contact", url: "contact" },

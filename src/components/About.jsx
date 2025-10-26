@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section
       name="about"
-      className="w-full bg-gray-100 py-12 px-4 md:px-8 lg:px-16 grid lg:grid-cols-2 gap-8 items-center"
+      className="w-full pages bg-gray-100 py-12 px-4 md:px-8 lg:px-16 grid lg:grid-cols-2 gap-8 items-center"
     >
       {/* Left: Image */}
       <div className="relative flex justify-center items-center">
