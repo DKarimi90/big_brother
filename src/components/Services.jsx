@@ -71,7 +71,7 @@ const Services = () => {
                   <h1 className="text-2xl text-(--primary)">
                     {service.title}
                   </h1>
-                  <p className="text-(--primaryOne)">{service.description}</p>
+                  <p className="text-(--primazryOne)">{service.description}</p>
                 </div>
               </div>
             </div>
