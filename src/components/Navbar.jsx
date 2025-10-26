@@ -115,7 +115,7 @@ useEffect(() => {
               : ruthmwathi9@gmail.com
             </div>
           </div>
-          <div className="h-0.5 w-full bg-(--primaryOne) my-2"></div>
+          <div className="h-0.5 w-full bg-(--primaryTwo) my-2"></div>
           <div className=" flex gap-2">
             {links.map((link, index) => (
               <div className="cursor-pointer" key={index}>
@@ -123,7 +123,7 @@ useEffect(() => {
                   to={link.url}
                   smooth={true}
                   spy={true}
-                  activeClass="text-(--primaryOne) border-b"
+                  activeClass="text-(--primaryTwo) border-b"
                 >
                   {link.title}
                 </Link>
@@ -173,7 +173,7 @@ useEffect(() => {
             </Link>
           </div>
 
-          <div className="flex text-(--primaryOne) text-xs pl-4 flex-col items-center  justify-center">
+          <div className="flex text-(--primary) text-xs pl-4 flex-col items-center  justify-center">
             <div className="flex items-center">
               <span>
                 <IoMdCall />
@@ -228,7 +228,7 @@ useEffect(() => {
                   to={mobile_link.url}
                   smooth={true}
                   spy={true}
-                  activeClass="text-(--primaryOne)"
+                  activeClass="text-(--primaryTwo)"
                   className="border-b py-2"
                 >
                   {mobile_link.title}

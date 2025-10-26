@@ -15,7 +15,7 @@ const About = () => {
 
       {/* text */}
       <div className="w-full pt-4 lg:max-w-[700px] p-6">
-        <p className="text-lg text-(--primaryOne) font-semibold">About Us</p>
+        <p className="text-lg text-(--primaryTwo) font-semibold">About Us</p>
         <div className="mt-2">
           <p className="text-xl md:text-2xl lg:text-3xl font-bold">
             Honoring Lives with Dignity and Compassion

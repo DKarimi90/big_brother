@@ -3,6 +3,7 @@
 :root {
   --primary: #000; 
   --primaryOne: #0077b6; 
+  --primaryTwo: #FF691C;
   --secondary: #E5E7EC;
   --secondaryOne: #26D366; 
 }
@@ -20,13 +21,13 @@
     @apply pt-16 md:pt-42;
   }
   .btnOne {
-    @apply bg-(--secondaryOne) px-4 py-2 rounded-xl text-white cursor-pointer
+    @apply bg-(--secondaryOne) px-4 py-2 rounded-3xl text-white cursor-pointer
   }
     .btnTwo {
-    @apply bg-(--primaryOne) px-8 py-3 hover:bg-transparent hover:border hover:text-(--primaryOne) hover:border-(--primaryOne) rounded-xl text-white cursor-pointer
+    @apply bg-(--primaryTwo) px-8 py-3 hover:bg-transparent hover:border hover:text-(--primaryTwo) hover:border-(--primaryTwo) rounded-3xl text-white cursor-pointer
   }
       .btnThree {
-    @apply bg-transparent border border-(--primaryOne) px-8 py-3 hover:bg-(--primaryOne) rounded-xl text-white cursor-pointer
+    @apply bg-transparent border border-(--primaryTwo) px-8 py-3 hover:bg-(--primaryTwo) rounded-xl text-white cursor-pointer
   }
   
 }
