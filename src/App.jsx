@@ -4,14 +4,14 @@ import { Home } from './pages'
 
 const App = () => {
   return (
-    <div>
-      {/* <Navbar />
-      <div>
-        <Home />
-      </div>
-      <Footer /> */}
-      Work in Progress!
-    </div>
+    // <div>
+    //   <Navbar />
+    //   <div>
+    //     <Home />
+    //   </div>
+    //   <Footer />
+    // </div>
+    <div className='flex items-center h-screen w-full justify-center'>Work in Progress...</div>
   );
 }
 
