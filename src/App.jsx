@@ -5,13 +5,14 @@ import { Home } from './pages'
 const App = () => {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar />
       <div>
         <Home />
       </div>
-      <Footer />
+      <Footer /> */}
+      Work in Progress!
     </div>
-  )
+  );
 }
 
 export default App
