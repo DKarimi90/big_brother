@@ -11,7 +11,7 @@ const App = () => {
     //   </div>
     //   <Footer />
     // </div>
-    <div className='flex items-center h-screen w-full justify-center'>Work in Progress...</div>
+    <div className='flex items-center h-screen w-full justify-center'>On the shelves...</div>
   );
 }
 
